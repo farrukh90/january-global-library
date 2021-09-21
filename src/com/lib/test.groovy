@@ -1,10 +1,19 @@
 def say_hello() {
     node {
         stage("Stage1"){
-            sh "echo Hello world"
-        }
+            git 'https://github.com/farrukh90/jenkins-class-packer.git'
+    }
         stage("Stage2"){
-            sh "echo sending email"
+            echo "hello"
+    }
+        stage("Stage3"){
+            echo "hello"
+    }
+        stage("Stage4"){
+            echo "hello"
+    }
+        stage("Stage5"){
+            echo "hello"
         }
     }
 }
