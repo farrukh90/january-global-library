@@ -1,7 +1,7 @@
-def say_hello() {
+def say_hello(REPO) {
     node {
         stage("Stage1"){
-            git 'https://github.com/farrukh90/jenkins-class-packer.git'
+            git "${REPO}"
     }
         stage("Stage2"){
             echo "hello"
