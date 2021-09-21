@@ -3,19 +3,8 @@ def say_hello() {
         stage("Stage1"){
             sh "echo Hello world"
         }
+        stage("Stage2"){
+            sh "echo sending email"
+        }
     }
 }
-
-
-
-// # Declarative
-// pipeline {
-//     agent any
-//     stages {
-//         stage("stage1"){
-//             steps{
-//                 sh "echo Hello world"
-//             }
-//         }
-//     }
-// }
